@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+  <title>Guchio Jump</title>
+  <link rel="stylesheet" href="styles.css?v=github-stable-1">
+</head>
+<body>
+  <main class="shell">
+    <canvas id="game" width="1280" height="720" aria-label="Guchio Jump"></canvas>
+
+    <nav class="touch-controls" aria-label="mobile controls">
+      <div class="touch-move">
+        <button class="touch-button" type="button" data-touch-control="left" aria-label="left">
+          <img src="assets/touch_left.png?v=github-stable-1" alt="">
+        </button>
+        <button class="touch-button" type="button" data-touch-control="right" aria-label="right">
+          <img src="assets/touch_right.png?v=github-stable-1" alt="">
+        </button>
+      </div>
+      <button class="touch-button touch-jump" type="button" data-touch-control="jump" aria-label="jump">
+        <img src="assets/touch_jump.png?v=github-stable-1" alt="">
+      </button>
+    </nav>
+
+    <div class="orientation-message" aria-hidden="true">
+      <div class="orientation-panel">
+        <strong>よこがめんですいしょう</strong>
+        <span>スマホをよこにしてあそんでね</span>
+      </div>
+    </div>
+  </main>
+  <script src="game.js?v=github-stable-1"></script>
+</body>
+</html>
